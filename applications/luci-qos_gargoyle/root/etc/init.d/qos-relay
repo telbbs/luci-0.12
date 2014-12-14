@@ -1,0 +1,16 @@
+#!/bin/sh /etc/rc.common
+
+START=99
+
+boot () {
+enabled=$(uci get qos_gargoyle.config.enabled)
+[ "$enabled" -eq 1 ] &&  {
+sleep 65 
+/etc/init.d/qos_gargoyle restart
+}
+}
+
+start(){
+/etc/init.d/qos_gargoyle restart
+}
+
