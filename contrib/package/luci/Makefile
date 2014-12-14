@@ -332,6 +332,8 @@ $(eval $(call translation,ukrainian,Ukrainian))
 $(eval $(call translation,hungarian,Hungarian))
 $(eval $(call translation,polish,Polish))
 
+$(eval $(call application,qos_gargoyle,LuCI Support for  qos-gargoyle,\
+	+gargoyle-firewall-util +libericstools +libiptbwctl +qos-gargoyle +PACKAGE_luci-app-qos_gargoyle:qos-gargoyle))
 
 ### Collections ###
 define collection
